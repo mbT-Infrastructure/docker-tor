@@ -1,0 +1,7 @@
+services:
+
+    tor:
+        container_name: tor
+        build: .
+        ports:
+            - "127.0.0.1:9050:9050"
