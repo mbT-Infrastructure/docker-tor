@@ -5,6 +5,7 @@ RUN apt update -qq && apt install -y -qq --no-install-recommends tor \
 
 COPY files/tor.sh /usr/local/bin/
 
-USER user
+ENV TOR_MAX_CIRCUIT_DIRTINESS=60
 
+USER user
 CMD [ "tor.sh" ]

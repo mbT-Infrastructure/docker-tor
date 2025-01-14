@@ -11,6 +11,11 @@ port `9050`.
 
 This Container image extends the [base image].
 
+### Environment variables
+
+-   `VARIABLE`
+    -   Set the MaxCircuitDirtiness, default: `60`.
+
 ## Development
 
 To run for development execute:

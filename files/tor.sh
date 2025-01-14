@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-set -e
+set -e -o pipefail
 
-tor --SocksPort 0.0.0.0:9050
+tor --MaxCircuitDirtiness "$TOR_MAX_CIRCUIT_DIRTINESS" --SocksPort 0.0.0.0:9050
